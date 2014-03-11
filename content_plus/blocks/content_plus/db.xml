@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btContentPlus">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+		<field name="content" type="X2">
+		</field>
+		
+		<field name="type" type="C" size="24">
+			<default value="text" />
+		</field>
+		<field name="layout" type="C" size="24">
+			<default value="none" />
+		</field>
+		<field name="style" type="C" size="255">
+			<default value="default" />
+		</field>
+		
+		<field name="width" type="I" size="4">
+			<unsigned />
+			<default value="0" />
+		</field>
+		<field name="height" type="I" size="4">
+			<unsigned />
+			<default value="0" />
+		</field>
+		
+		<field name="fID" type="I" size="32">
+			<unsigned />
+			<default value="NULL" />
+		</field>
+		<field name="caption" type="L">
+			<default value="0" />
+		</field>
+		<field name="captionCentered" type="L">
+			<default value="0" />
+		</field>
+		<field name="link_type" type="C" size="255">
+			<default value="none" />
+		</field>
+		<field name="link_value" type="X">
+		</field>
+		<field name="link_target" type="L">
+			<default value="0" />
+		</field>
+		
+		<field name="pullquote" type="X">
+		</field>
+		<field name="author" type="C" size="255">
+		</field>		
+		
+	</table>
+</schema>
